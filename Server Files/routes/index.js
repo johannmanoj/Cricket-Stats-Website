@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const auth = require('./auth');
+const players = require('./players')
 
 
-router.use('/auth', auth)
+router.use('/players', players)
+
+
 
 module.exports = router;
